@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>fosm :: What&apos;s Different</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   <meta name="Description" content="fosm :: whats different">
+   
+<style type="text/css">
+html, body { margin: 0px; padding: 0px; border: 0px; }
+#container { width: 920px; margin: 0 0 0 20px; /* top right bottom left */ padding: 0; background-color: #fff; }
+#container #header { margin: 0; padding: 0; width: 100%; float: left; }
+#container #title { margin: 0; padding: 0; width: 100%; float: left; }
+#container #title_col1 { width: 130px; float: left; padding:0 0 0 10px; }
+#container #title_col2 { width: 780px; float: right; text-align: left; padding:0 0 10px 0; vertical-align: top; }
+#container #column1 { width: 280px; height: 520px; float: left; background-color: #cdffcc; border: #000000 solid 1px; text-align: center; padding: 10px }
+#container #col2outer { width: 610px; float: right; margin: 0; padding: 0; }
+#col2outer #column2 { width: 280px; height: 520px; float: left; background-color: #dddddd; border: #000000 solid 1px; text-align: center; padding: 10px }
+#col2outer #column3 { width: 280px; height: 520px; float: right; background-color: #b0eef3; border: #000000 solid 1px; text-align: center; padding: 10px }
+#container .main {width: 100%; float: left; background-color: #e0e0e0; border: #000000 solid 1px; padding: 10px }
+#container #footer { float: left; width: 100%; }
+p { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.0em; font-weight: normal; color: #000000; text-decoration: none; }
+p.small { font-size: 0.8em; font-style: normal; }
+p.footer { font-size: 0.8em; font-style: normal; }
+h1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.3em; font-weight: bold; color: #000000; text-decoration: none; }
+h2 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.1em; font-weight: bold; color: #000000; text-decoration: none; }
+</style>
+
+</head>
+<body>
+<div id="container">
+	<div id="header">
+
+		<p class="small" align="right"><a href="/login">log-in</a> |
+		<a href="/user/new">sign-up</a></p>
+	</div>
+	<div id="title">
+		<div id="title_col1">
+			<a href="index.html"><img border="0" src="FOSM.png" alt="fosm logo"></a>
+		</div>
+		
+		<div id="title_col2">
+
+			<h1>What&apos;s Different?</h1>
+			<p>
+				If you are familiar with OpenStreetMap you may want to know what&apos;s different about fosm
+				and learn why you should contribute to fosm rather than OpenStreetMap.  This page summarizes
+				the main differences.
+			</p>
+		</div>
+	</div>
+	<div class='main'>
+	<h2>Differences</h2>
+
+	<ul>
+		<li>
+			The main difference is, of course, the license.  Fosm content is licensed under the Creative Commons
+			CC&nbsp;BY-SA license rather than OpenStreetMap&apos;s combination of Contributor Terms (CTs), Open Database 
+			License (ODbL), and Database Content License (DbCL).  We think our license is much simpler and easier to
+			understand.  It relies on copyright which is the traditional mechanism for protecting maps and follows
+			well known and understood legal principles.
+		</li>
+		<li>
+			The fosm philosophy is a little different from OpenStreetMap.  We believe in distributed everything with
+			minimal centralized control. 
+		</li>
+		<li>
+			The fosm server platform is different and more technically advanced than OpenStreetMap.  Rather than
+			using a vast array of services spread across multiple servers, fosm runs on a single much smaller server.
+			This is possible because we use a more sophisticated database and a very thin application layer.  For
+			resilience the database is replicated, in real time, to a backup server located on a different continent.  
+		</li>
+
+		<li>
+			Currently the fosm database automatically imports all edits and contributions made to the OpenStreetMap
+			database.  Because of this fosm actually has more data than OpenStreetMap.  A conflict detection mechanism
+			notifies fosm users if there is a collision between OpenStreetMap edits and those made in fosm.
+		</li>
+		<li>
+			Way splits and merges are recorded more carefully in fosm than in OpenStreetMap.  A special tag 
+			meta:predecessors is used to indicate if a version of a way has been derived from one or more other
+			ways.  This tag is generated automatically by fosm after any editing session.
+		</li>
+		</li>
+	</ul>
+	</div>
+	<div id="footer">
+
+	<p class="footer">All geospatial content published on this site is the copyright of fosm contributors and OpenStreetMap
+	contributors. It is licensed under <a href="http://creativecommons.org/licenses/by-sa/2.0/">
+	CC&nbsp;BY-SA 2.0</a></p>
+	</div>
+</div>
+</body>
+</html>
