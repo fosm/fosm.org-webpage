@@ -1,5 +1,5 @@
 html, body { margin: 0px; padding: 0px; border: 0px; }
-#container { width: 920px; margin: 0 0 0 20px; /* top right bottom left */ padding: 0; background-color: #fff; }
+#container { width: 920px; margin: 0 auto; /* top right bottom left */ padding: 0; background-color: #fff; }
 #container #header { margin: 0; padding: 0; width: 100%; float: left; }
 #container #title { margin: 0; padding: 0; width: 100%; float: left; }
 #container #title_col1 { width: 130px; float: left; padding:0 0 0 10px; }
