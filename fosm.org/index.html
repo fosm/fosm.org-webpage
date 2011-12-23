@@ -1,47 +1,162 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<meta xmlns="" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-<meta xmlns="" name="description" content="FOSM. Free maps created by a global community of volunteers. Licensed for use freely with attribution and share-alike (CC-BY-SA).">
-<meta xmlns="" name="keywords" content="FOSM, OSM, Map, free, CC-BY-SA, wiki, geodata, cartography, ODbL">
-<script xmlns="" src="javascripts/prototype.js" type="text/javascript"></script><script xmlns="" src="javascripts/site.js" type="text/javascript"></script><link xmlns="" href="stylesheets/common.css" media="screen" rel="stylesheet" type="text/css">
-<link xmlns="" href="stylesheets/large.css" media="screen" rel="stylesheet" type="text/css">
-<link xmlns="" href="stylesheets/small.css" media="only screen and (max-width: 481px)" rel="stylesheet" type="text/css">
-<link xmlns="" href="stylesheets/large.css" media="screen and (min-width: 482px)" rel="stylesheet" type="text/css">
-<link xmlns="" href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css">
-<style xmlns="">
-      .hidden { display: none }
-      .hide_if_logged_in { display: none }
-      .hide_if_user_ { display: none }
-      .show_if_user_ { display: inline }
-      .hide_unless_administrator { display: none }
-    </style>
-<title>FOSM :: A free wiki world map</title></head><body><div id="content"><div xmlns="" id="notice">
-    FOSM is licensed under Creative Commons CC-BY-SA 2.0 :: More data than OSM and a better license for contributors.
-  </div>
-<h2>FOSM :: Free OSM</h2><p class="emphasis">FOSM is a free map of the planet which anyone can use and contribute to.  It is very similar to OpenStreetMap
-	except that it has more data and is licensed under the well-known Creative Commons attribution
-	and share-alike license CC-BY-SA.</p><p>Currently FOSM provides a reasonably functional API, but not all methods are available at this time.  Edits to existing OpenStreetMap content is
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>fosm.org :: The free wiki world map</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   <meta name="Description" content="fosm :: The free wiki world map">
 
-mirrored here normally within just a few minutes.</p><p>Editing is now beta.  If you would like to try it out just <a href="/user/new">create an account</a> and configure your favorite editor.</p><p><b>Potlatch.</b>  Click <a href="/p2/potlatchFosm.xml">here</a> to edit with Potlatch 2.  This is the successor to the original Potlatch and while it's still under development I already prefer it and it's starting to be a rival to JOSM.</p><p><b>JOSM.</b>  The API has been tested with JOSM.  To contribute to FOSM you will need to make the following configuration change:
-        <ul><li>Within JOSM go to Preferences (from the menu Select Edit/Preferences or press F12).</li><li>Select the Connection Settings tab, which is the second one down.</li><li>Change the Base Server URL from http://www.openstreetmap.org/api to http://api.fosm.org/api</li><li>Change the username and password to those of your FOSM account.</li></ul></p><p><b>Merkaartor.</b>  The API has been tested with Merkaartor.  To use it you will need to make the following configuration changes:
-         <ul><li>Within Merkaartor go to Tools/Preferences and select the Data tab.</li><li>Change the Website from http://www.openstreetmap.org to http://api.fosm.org</li><li>Change the username and password to those of your FOSM account.</li></ul></p><p>Diff files here: <a href="/planet/minute-replicate">http://planet.fosm.org/planet/minute-replicate</a></p><p>View conflicts: <a href="/api/0.6/user/conflicts">http://api.fosm.org/api/0.6/user/conflicts</a></p><p>All geospatial content published on this site is Copyright FOSM, OpenStreetMap and contributors and licensed under CC-BY-SA 2.0</p><iframe src="http://www.facebook.com/widgets/like.php?href=http://www.fosm.org" scrolling="no" frameborder="0" style="border:none; width:450px; height:80px"></iframe></div><span xmlns="" id="greeting"><a href="/login" id="loginanchor" title="Log in with an existing account">log in</a> |
-      <a href="/user/new" id="registeranchor" title="Create an account for editing">sign up</a></span><div xmlns=""><ul id="tabnav"><li><a href="/edit?lat=39.64216340529536&amp;lon=-104.95982455511339&amp;zoom=18" class="" id="editanchor" title="Contribute content to the maps">Contribute</a></li></ul></div>
-<div xmlns="" id="left">
-<div id="logo"><center>
-<h1>FOSM</h1>
-<a href="/"><img alt="FOSM logo" border="0" height="120" src="images/FreeOSM_logo.png" width="120"></a><br><h2 class="nowrap">A Free Wiki World Map</h2>
-</center></div>
-<div id="intro">
-<p>
-          FOSM is a liberally licensed and community created map of this planet.
-        </p>
-<p>
-          FOSM allows you to collaboratively create and use maps of anywhere and everywhere.
-        </p>
-<p>
-        FOSM is built and supported by the community.
-        </p>
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+
+<script type="text/javascript">
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<script>
+	!function(d,s,id){
+		var js,fjs=d.getElementsByTagName(s)[0];
+		if(!d.getElementById(id)){
+			js=d.createElement(s);
+			js.id=id;
+			js.src="//platform.twitter.com/widgets.js";
+			fjs.parentNode.insertBefore(js,fjs);
+		}
+	}(document,"script","twitter-wjs");
+</script>
+   
+<style type="text/css">
+html, body { margin: 0px; padding: 0px; border: 0px; }
+#container { width: 950px; margin: 0 0 0 20px; /* top right bottom left */ padding: 0; background-color: #fff; }
+#container #header { margin: 0; padding: 0; width: 100%; float: left; }
+#container #title { margin: 0; padding: 0; width: 100%; float: left; }
+#container #title_col1 { width: 130px; float: left; padding:0 0 0 10px; }
+#container #title_col2 { width: 810px; float: right; text-align: left; padding:0 0 10px 0; vertical-align: top; }
+#container #column1 { width: 290px; height: 530px; float: left; overflow:hidden; background-color: #cdffcc; border: #000000 solid 1px; text-align: center; padding: 10px }
+#container #col2outer { width: 630px; float: right; margin: 0; padding: 0; }
+#col2outer #column2 { width: 290px; height: 530px; float: left; overflow:hidden; background-color: #dddddd; border: #000000 solid 1px; text-align: center; padding: 10px }
+#col2outer #column3 { width: 290px; height: 530px; float: right; overflow:hidden; background-color: #b0eef3; border: #000000 solid 1px; text-align: center; padding: 10px }
+#container #footer { float: left; width: 100%; }
+#container #columnB1 { width: 310px; float: left; overflow:hidden; background-color: #fff; text-align: left; padding: 10px 0 0 0 }
+#container #columnB2 { width: 630px; float: right; overflow:hidden; background-color: #fff; text-align: left; padding: 10px 0 0 0 }
+p { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.0em; font-weight: normal; color: #000000; text-decoration: none; }
+p.small { font-size: 0.8em; font-style: normal; }
+p.footer { font-size: 0.8em; font-style: normal; }
+h1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.3em; font-weight: bold; color: #000000; text-decoration: none; }
+h2 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.1em; font-weight: bold; color: #000000; text-decoration: none; }
+.feedburnerFeedBlock { font-family: Verdana, Arial, Helvetica, sans-serif; border:1px solid #000000; background-color:#ffe; padding: 10px; }
+.feedTitle { font-weight: bold; }
+</style>
+
+</head>
+<body>
+<div id="container">
+
+<div id="header">
+<p class="small" align="right"><a href="/login">log-in</a> | <a href="/user/new">sign-up</a></p>
 </div>
-<div id="left_menu" class="left_menu"></div>
-<center></center>
-</div></body></html>
+
+<div id="title">
+<div id="title_col1">
+<a href="index.html"><img border="0" src="FOSM.png" alt="fosm logo"></a>
+</div>
+<div id="title_col2">
+<h1>fosm</h1>
+<p>fosm is a free map of the planet which anyone can use and contribute to.
+It is a fork of OpenStreetMap licensed under the Creative Commons attribution
+and share-alike license CC-BY-SA.</p>
+</div>
+</div>
+
+<div id="column1">
+<h2>Geodata</h2>
+<p><img border="1" src="data.png" alt="xml data" width="200"></p>
+<p>Our geodata is stored in standard OpenStreetMap format as a set of points,
+lines and areas making it usable for many purposes.</p>
+<p> It can be used to make custom designed maps, to create routing applications
+or to produce interesting data analyses. Most tools that work with OSM data will also work with fosm.</p>
+<p>A full copy of fosm&#39s planet earth database is available <a href="/planet/">here</a> and   
+minutely replication files are available <a href="/planet/minute-replicate/">here</a>.</p>
+</div>
+
+<div id="col2outer">
+<div id="column2">
+<h2>Contribute</h2>
+<p><img border="1" src="josm.png" alt="josm" width="200"></p>
+<p>New contributors are very welcome.</p>
+<p>If you would like to try it out just <a href="/user/new">create an
+account</a> and configure your favorite editor. We currently support JOSM and Merkaartor.
+Please check our <a href="gettingStarted.html">getting started</a> page for more information.</p>
+<p>Currently, all updates to OpenStreetMap are also being mirrored to the fosm database.</p>
+<p>Please also consider joining our<br> <a href="http://groups.google.com/group/osm-fork">
+mailing list</a>.</p>
+</div>
+
+<div id="column3">
+<h2>Maps</h2>
+<p class="small">
+<a href="http://map.4x4falcon.com/">
+<img border="1" src="map1.png" alt="Map"><br>
+Australia rendered with Mapnik</a></p>
+<p class="small">
+<a href="http://www.dartmoorhiking.co.uk/map.html">
+<img border="1" src="map2.png" alt="Map"><br>
+Dartmoor rendered with Maperitive</a></p>
+<p>Maps made with fosm data.</p>
+</div>
+</div>
+
+<div id="columnB1">
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 3,
+  interval: 30000,
+  width: 'auto',
+  height: 'auto',
+  theme: {
+    shell: {
+      background: '#333333',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#000000',
+      color: '#ffffff',
+      links: '#4aed05'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('fosm_maps').start();
+</script>
+</div>
+
+<div id="columnB2">
+<div>
+<script src="http://feeds.feedburner.com/FosmBlog?format=sigpro" type="text/javascript" ></script>
+<noscript><p>Subscribe to RSS headline updates from: <a href="http://feeds.feedburner.com/FosmBlog"></a><br/>Powered by FeedBurner</p> </noscript>
+<p>Please support the project by helping to spread the word...</p>
+</div>
+<p><g:plusone annotation="inline" width="300"></g:plusone></p>
+<p><a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a></p>
+</div>
+
+<div id="footer">
+<p class="footer">All geospatial content published on this site is the copyright of fosm contributors and OpenStreetMap contributors. It is licensed under <a href="http://creativecommons.org/licenses/by-sa/2.0/">
+CC&nbsp;BY-SA 2.0</a></p>
+</div>
+</div>
+
+
+</body>
+</html>
