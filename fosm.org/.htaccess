@@ -1,0 +1,18 @@
+AddHandler cgi-script .cgi
+Options ExecCGI FollowSymLinks Indexes
+
+RewriteEngine on
+RewriteBase /
+
+# Always route top level requests to serverLink
+#RewriteRule ^$ "serverLink.cgi" [T=application/x-httpd-cgi]
+
+# If it's a real directory or file then pass through, do not rewrite anything
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.+) - [L]
+
+# If it's not a directory then pass to serverLink (the directory check is required
+# to defend against info leak if url is an extant directory but without a trailing slash character (eg foo.org/gaga)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ "serverLink.cgi" [T=application/x-httpd-cgi]
+
