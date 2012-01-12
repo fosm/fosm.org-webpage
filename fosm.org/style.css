@@ -14,6 +14,7 @@ html, body { margin: 0px; padding: 0px; border: 0px; }
 p { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.0em; font-weight: normal; color: #000000; text-decoration: none; }
 p.small { font-size: 0.8em; font-style: normal; }
 p.footer { font-size: 0.8em; font-style: normal; }
+ul { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.0em; font-weight: normal; color: #000000; text-decoration: none; }
 h1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.3em; font-weight: bold; color: #000000; text-decoration: none; }
 h2 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.1em; font-weight: bold; color: #000000; text-decoration: none; }
 .feedburnerFeedBlock { font-family: Verdana, Arial, Helvetica, sans-serif; border:1px solid #000000; background-color:#ffe; padding: 10px; }
