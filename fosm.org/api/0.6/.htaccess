@@ -1,0 +1,14 @@
+AddHandler cgi-script .cgi
+Options ExecCGI FollowSymLinks
+RewriteEngine on
+RewriteBase /api/0.6
+
+# Pass through calls to the user subdirectory
+RewriteRule ^user/ - [L]
+
+RewriteCond %{HTTP:Authorization} (.+)
+RewriteRule ^ - [e=HTTP_AUTHORIZATION:%1]
+
+# Everything else, pass to serverLink for processing
+RewriteRule ^(.*)$ "serverLink.cgi" [T=application/x-httpd-cgi]
+
