@@ -28,14 +28,14 @@
     <meta name="description" content="FOSM. Free maps created by a global community of volunteers. Licensed for use freely with attribution and share-alike (CC-BY-SA)." />
     <meta name="keywords" content="FOSM, OSM, Map, free, CC-BY-SA, wiki, geodata, cartography, ODbL" />
 
-    <script src="javascripts/prototype.js" type="text/javascript"></script>
-    <script src="javascripts/site.js" type="text/javascript"></script>
+    <script src="/javascripts/prototype.js?1271689861" type="text/javascript"></script>
+    <script src="/javascripts/site.js?1279720297" type="text/javascript"></script>
 
-    <link href="stylesheets/common.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/large.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/small.css" media="only screen and (max-width: 481px)" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/large.css" media="screen and (min-width: 482px)" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/common.css?1273613322" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/large.css?1271689861" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/small.css?1271689861" media="only screen and (max-width: 481px)" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/large.css?1271689861" media="screen and (min-width: 482px)" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/print.css?1271689861" media="print" rel="stylesheet" type="text/css" />
     <style>
       .hidden { display: none }
       .hide_if_logged_in { display: none }
@@ -80,7 +80,7 @@
 <xsl:template name="tabnav">
     <div>
       <ul id="tabnav">
-<!--        <li><a href="/poly/tah.html#2.00/34.4/-5.9" class="" id="viewanchor" title="View the maps">Maps</a></li> -->
+        <!--  <li><a href="/poly/tah.html#2.00/34.4/-5.9" class="" id="viewanchor" title="View the maps">Maps</a></li> -->
         <li><a href="/edit?lat=39.64216340529536&amp;lon=-104.95982455511339&amp;zoom=18" class="" id="editanchor" title="Contribute content to the maps">Contribute</a></li>
       </ul>
     </div>
@@ -96,7 +96,7 @@
         <center>
 
           <h1>FOSM</h1>
-          <a href="/"><img alt="FOSM logo" border="0" height="120" src="images/FreeOSM_logo.png" width="120" /></a><br/>
+          <a href="/"><img alt="FOSM logo" border="0" height="120" src="/images/FreeOSM_logo.png?1274025181" width="120" /></a><br/>
           <h2 class="nowrap">A Free Wiki World Map</h2>
         </center>
       </div>
@@ -120,20 +120,18 @@
 
 
       <div id="left_menu" class="left_menu">
-<!--        <a href="/contribute" title="Learn how to contribute to the maps">Contribute</a><br /> 
+        <a href="/contribute" title="Learn how to contribute to the maps">Contribute</a><br />
         <a href="/copyright" title="Learn how the content is protected by copyright">Copyright</a><br />
         <a href="/license" title="Learn about the liberal license under which you can use FOSM content">License</a><br />
         <a href="/attribution" title="Learn about who has contributed to the FOSM map">Attribution</a><br />
--->
       </div>
 
 
 
       <center>
-<!--        <div class="donate">
+        <div class="donate">
           <a href="/donate" title="Give some money to support FOSM">Donations</a>
         </div>
--->
       </center>
 
     </div>
