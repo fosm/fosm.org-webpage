@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>fosm :: Create a User Account</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="Description" content="create a fosm user account"> 
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<script type="text/javascript" src="validateUserForm.js"></script> 
+</head>
+<body OnLoad="document.forms['signupForm'].userEmail.focus();">
+	<div id="container">
+		<div id="header">
+			<p class="small" align="right">&nbsp;</a></p>
+		</div>
+
+		<div id="title">
+			<div id="title_col1">
+				<a href="index.html"><img border="0" src="FOSM.png" alt="fosm logo"></a>
+			</div>
+			<div id="title_col2">
+				<h1>Create a fosm user account</h1>
+				<p>Fill in these details and then wait for an email with instructions on how to activate your account.</p>
+			</div>
+		</div>
+
+		<div id="main">
+			<form language="JavaScript" name="signupForm" method="post" action="/user/create">
+			<table width="900px" border="0" cellspacing="0" cellpadding="0" id="signupForm">
+
+				<tr><td colspan="2">&nbsp;</td></tr>
+
+				<tr>
+					<td width="300px" class="formName">Email Address:&nbsp;</td>
+					<td width="600px">
+						<input id="userEmail" maxlength="255" name="userEmail" size="50" tabindex="1" type="text"/>
+					</td>
+				</tr>
+
+				<tr><td colspan="2">&nbsp;</td></tr>
+
+				<tr>
+					<td width="300px" class="formName">Confirm Email Address:&nbsp;</td>
+					<td width="600px">
+						<input id="userEmailConfirmation" maxlength="255" name="userEmailConfirmation" size="50" tabindex="2" type="text"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td colspan="2" class="small">Not displayed publicly (see <a href="privacyPolicy.html" title="Privacy policy">privacy policy</a>)</td>
+				</tr>
+
+				<tr><td colspan="2">&nbsp;</td></tr>
+
+				<tr>
+					<td width="300px" class="formName">Display Name:&nbsp;</td>
+					<td width="600px">
+						<input id="userDisplayName" maxlength="255" name="userDisplayName" size="30" tabindex="3" type="text"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td colspan="2" class="small">Your publicly displayed username. You can change this later.</td>
+				</tr>
+
+				<tr>
+					<td class="formName">If you would like to use the same username as on OpenStreetMap please check this box</td>
+					<td>
+						<input type="checkbox" name="claimOsmName" id="claimOsmName" tabindex="4"/>
+					</td>
+				</tr>
+
+				<tr><td colspan="2">&nbsp;</td></tr>
+
+				<tr>
+					<td width="300px" class="formName">Password:&nbsp;</td>
+					<td width="600px">
+						<input id="userPassCrypt" maxlength="255" name="userPassCrypt" size="30" tabindex="5" type="password"/>
+					</td>
+				</tr>
+
+				<tr><td colspan="2">&nbsp;</td></tr>
+
+				<tr>
+					<td width="300px" class="formName">Confirm Password:&nbsp;</td>
+					<td width="600px">
+						<input id="userPassCryptConfirmation" maxlength="255" name="userPassCryptConfirmation" size="30" tabindex="6" type="password"/>
+					</td>
+				</tr>
+
+				<tr><td colspan="2">&nbsp;</td></tr>
+
+				<tr>
+					<td class="formName">Copyright and License:&nbsp;</td>
+					<td>You confirm that all content uploaded to fosm.org via this account is contributed by you under the <a href='http://creativecommons.org/licenses/by-sa/2.0/'>Creative Commons Attribution Share Alike 2.0</a> License.</td>
+				</tr>
+  
+				<tr><td colspan="2">&nbsp;</td></tr>
+
+				<tr>
+					<td></td>
+					<td align="left">
+						<input type="button" value="Create Account" onclick="validateNewUserForm()" tabindex="6" class="but"/>
+					</td>
+				</tr>
+			</table>
+			</form>
+
+			<p>&nbsp;</p>
+		</div>
+		
+		<div id="footer">
+			<p class="footer">All geospatial content published on this site is the copyright 
+			of fosm contributors and OpenStreetMap contributors. It is licensed under 
+			<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC&nbsp;BY-SA 2.0</a>. 
+			Please refer to our <a href="copyright.html">copyright and license</a> page for details.</p>
+		</div>
+
+	</div>
+</body>
+</html>
